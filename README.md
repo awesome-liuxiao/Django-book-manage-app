@@ -20,3 +20,5 @@ INSTALLED_APPS = [
 
 #### License
 This work is follows the MIT Licese.
+
+Please enjoy it :)
