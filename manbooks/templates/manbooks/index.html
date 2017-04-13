@@ -1,0 +1,16 @@
+{% if all_book_list %}
+<h1>Books list</h1>
+<ul>
+    {% for book in all_book_list %}
+        <li>
+            <a href="/manbooks/{{ book.id }}/">
+                {{ book.book_name }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+{% else %}
+    <p>No books are available</p>
+{% endif %}
+
+<a href="{% url 'manbooks:newbook' %}">Add new book</a>

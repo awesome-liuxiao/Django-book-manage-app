@@ -1,0 +1,19 @@
+<h1>Add new book</h1>
+<form action="{% url 'manbooks:addnew' %}" method="post">
+{% csrf_token %}
+    <ul>
+        <li>Book name<br \>
+        <input type="text" name="bookname" id="bookname">
+        </li>
+        <li>Author name<br \>
+        <input type="text" name="authorname" id="authorname">
+        </li>
+        <li>Publication date<br \>
+        <input type="text" name="pubyear" id="pubyear">
+        </li>
+        <li>Link address<br \>
+        <input type="text" name="linkaddr" id="linkaddr">
+        </li>
+    </ul>
+    <input type="submit" name="Add">
+</form>

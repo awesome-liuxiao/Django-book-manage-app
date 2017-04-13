@@ -1,0 +1,5 @@
+<h1>{{ book.book_name }}</h1>
+<p>Auther: {{ book.author_name }} </p>
+<p>Published date: {{ book.pub_year }} </p>
+<p>Link: {{ book.link_addr }} </p>
+<a href="{% url 'manbooks:delbook' book.id %}">Delete</a>
