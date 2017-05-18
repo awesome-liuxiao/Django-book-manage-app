@@ -10,4 +10,3 @@ class BookAdmin(admin.ModelAdmin):
         ('Link address',        {'fields': ['link_addr']}),
     ]
 admin.site.register(Book)
-# Register your models here.
